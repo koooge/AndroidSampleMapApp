@@ -24,8 +24,9 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -41,22 +42,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="android.example.koooge.com"
-                    android:pathPattern="/.*"
-                    android:scheme="https" />
             </intent-filter>
         </activity>
     </application>
